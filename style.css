@@ -1,0 +1,47 @@
+body {
+  font-family: "SF Pro Display", Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 928px) {
+  body {
+    padding: 0 20px;
+    background: #f2f1f6;
+  }
+
+  h2 {
+    font-weight: 100;
+  }
+
+  .statusbar-search {
+    background: #e4e3e9;
+    padding: 10px 15px;
+  }
+
+  .statusbar-search-field {
+    border: none;
+    background: none;
+  }
+
+  .div-profile-img {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    clip-path: circle();
+  }
+
+  .div-cell {
+    padding: 10px 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    background: #fff;
+  }
+
+  .div-cell-text {
+    border-bottom: 1px #000 solid;
+    display: flex;
+    justify-content: space-between;
+  }
+}
