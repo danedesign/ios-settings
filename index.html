@@ -1,74 +1,169 @@
-<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
 
-<header>
-  <h1>
-    Settings
-  </h1>
-  <div class="statusbar-search">
-    <iconify-icon inline icon="ion:search-sharp"></iconify-icon>
-    <input placeholder="Search" class="statusbar-search-field">
-  </div>
-</header>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+  <script src="/main.js"></script>
+  <title>Document</title>
+</head>
 
-<section id="viewport">
-  <div class="div-cell">
-    <img src="https://images.unsplash.com/photo-1673972268351-9319c271c8cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="div-profile-img">
-    <div>
-      <h2>Bartholomew H. Allen</h2>
-      <h5>Apple ID, iCloud+, Media & Purchases</h5>
+<body>
+  <header>
+    <h1>
+      Settings
+    </h1>
+  </header>
+
+  <section id="viewport">
+    <div class="statusbar-search">
+      <iconify-icon inline icon="ion:search-sharp"></iconify-icon>
+      <input placeholder="Search" class="statusbar-search-field">
     </div>
 
-  </div>
-
-  <div class="div-cell">
-    <h2>iCloud Storage is Full</h2>
-  </div>
-
-  <div class="div-cell">
-    <h2>iOS 16.2 Now Available</h2>
-  </div>
-
-  <div class="div-cell">
-    <iconify-icon inline icon="healthicons:small-plane-negative" width="20px"></iconify-icon>
-    <div class="div-cell-text">
-      <h2>Airplane Mode</h2>
-      <h2>Connected</h2>
+    <div class="div-cell cell-standalone">
+      <img src="https://media.tenor.com/_RoZtOoGCoQAAAAC/%E8%94%A1%E5%BE%90%E5%9D%A4%E7%B1%83%E7%90%83-cai-xukun.gif"
+        class="div-profile-img">
+      <div>
+        <h2>John Appleseed</h2>
+        <h6>Apple ID, iCloud+, Media & Purchases</h6>
+      </div>
+      <div class="div-cell-text-right">
+        <iconify-icon inline icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon>
+      </div>
     </div>
 
-  </div>
+    <div class="div-cell cell-standalone">
+      <h4>iCloud Storage is Full</h4>
+      <div class="div-cell-text-right">
+        <iconify-icon inline icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon>
+      </div>
+    </div>
 
-  <div class="div-cell">
-    <iconify-icon inline icon="fontisto:wifi" width="20px"></iconify-icon>
-    <h2>WLAN</h2>
-  </div>
+    <div class="div-cell cell-standalone">
+      <h4>iOS 16.2 Now Available</h4>
+      <div class="div-cell-text-right">
+        <iconify-icon inline icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon>
+      </div>
+    </div>
 
-  <div class="div-cell">
-    <iconify-icon inline icon="grommet-icons:bluetooth" width="20px"></iconify-icon>
-    <h2>Bluebooth</h2>
-  </div>
+    <div class="div-cell cell-first cell-border">
+      <div class="div-cell-icon" style="background: #f09a37;">
+        <iconify-icon inline icon="zondicons:airplane"></iconify-icon>
+      </div>
+      <div class="div-cell-text">
+        <h4>Airplane Mode</h4>
+        <div class="div-cell-text-right">
+          <iconify-icon inline icon="bi:toggle-on" width="40px" height="25px" preserveAspectRatio="xMidYMid slice"
+            style="color: #f09a37;"></iconify-icon>
+        </div>
+      </div>
 
-  <div class="div-cell">
-    <iconify-icon inline icon="ion:cellular" width="20px"></iconify-icon>
-    <h2>Mobile Data</h2>
-  </div>
+    </div>
 
-  <div class="div-cell">
-    <iconify-icon inline icon="material-symbols:wifi-tethering" width="20px"></iconify-icon>
-    <h2>Personal Hotspot</h2>
-  </div>
+    <div class="div-cell cell-border">
+      <div class="div-cell-icon">
+        <iconify-icon inline icon="fontisto:wifi" width="20px"></iconify-icon>
+      </div>
+      <div class="div-cell-text">
+        <h4>WLAN</h4>
+        <div class="div-cell-text-right">
+          <h4>RMIT-University</h4>
+          <iconify-icon inline icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon>
+        </div>
+      </div>
+    </div>
 
-  <div class="div-cell">
-    <iconify-icon inline icon="mdi:app-notification" width="20px"></iconify-icon>
-    <h2>Notifications</h2>
-  </div>
+    <div class="div-cell cell-border">
+      <div class="div-cell-icon">
+        <iconify-icon inline icon="grommet-icons:bluetooth" width="20px"></iconify-icon>
+      </div>
+      <div class="div-cell-text">
+        <h4>Bluebooth</h4>
+        <div class="div-cell-text-right">
+          <h4>On</h4>
+          <iconify-icon inline icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon>
+        </div>
+      </div>
 
-  <div class="div-cell">
-    <iconify-icon inline icon="subway:sound" width="20px"></iconify-icon>
-    <h2>Sounds & Haptics</h2>
-  </div>
+    </div>
 
-  <div class="div-cell">
-    <iconify-icon inline icon="ph:moon-fill" width="20px"></iconify-icon>
-    <h2>Focus</h2>
-  </div>
-</section>
+    <div class="div-cell cell-border">
+      <div class="div-cell-icon" style="background: #65c466;">
+        <iconify-icon inline icon="ion:cellular" width="20px"></iconify-icon>
+
+      </div>
+      <div class="div-cell-text">
+        <h4>Mobile Data</h4>
+        <div class="div-cell-text-right">
+          <iconify-icon inline icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="div-cell cell-last">
+      <div class="div-cell-icon" style="background: #65c466;">
+        <iconify-icon inline icon="material-symbols:wifi-tethering" width="20px"></iconify-icon>
+
+      </div>
+      <div class="div-cell-text">
+        <h4>Personal Hotspot</h4>
+        <div class="div-cell-text-right">
+          <iconify-icon inline icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="div-cell cell-first cell-border">
+      <div class="div-cell-icon" style="background: #ea4f3d;">
+        <iconify-icon inline icon="mdi:app-notification" width="20px"></iconify-icon>
+
+      </div>
+      <div class="div-cell-text">
+        <h4>Notifications</h4>
+        <div class="div-cell-text-right">
+          <iconify-icon inline icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="div-cell cell-border">
+      <div class="div-cell-icon" style="background: #ea445a;">
+        <iconify-icon inline icon="subway:sound" width="20px"></iconify-icon>
+
+      </div>
+      <div class="div-cell-text">
+        <h4>Sounds & Haptics</h4>
+        <div class="div-cell-text-right">
+          <iconify-icon inline icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="div-cell cell-last">
+      <div class="div-cell-icon" style="background: #5756ce;">
+        <iconify-icon inline icon="ph:moon-fill" width="20px"></iconify-icon>
+
+      </div>
+      <div class="div-cell-text">
+        <h4>Focus</h4>
+        <div class="div-cell-text-right">
+          <iconify-icon inline icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+</body>
+
+</html>
